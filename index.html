@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
+  <title>Beli Pintar - Company Profile</title>
+
+  <link rel="icon" href="favicon.ico" type="image/gif" sizes="32x32">
+  <link rel="icon" href="favicon.ico" type="image/icon type">
+
+  <!-- Bootstrap Icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- 3rd Libraries -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar navbar-transparent navbar-expand-md" style="z-index: 2;">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-warning kuat" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning kuat" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning kuat" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="top: -10vh;" id="carouselExampleControls" class="carousel slide bg-dark" data-ride="carousel">
+      <div class="carousel-inner text-light text-center">
+        <div class="carousel-item active" style="background-image: url(img/slider_1.jpg)">
+          <div class="d-flex h-100 align-items-center justify-content-center">
+            <h1 style="width: 30vw;">
+              Where you meet your IT needs
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/slider_2.jpg)">
+          <div class="d-flex h-100 align-items-center justify-content-center">
+            <h1 style="width: 30vw;">
+              Our MISSION To be the leader in IT Solution Company delivering the highest quality, innovation, and customer services
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url(img/slider_3.jpg)">
+          <div class="d-flex h-100 align-items-center justify-content-center">
+            <h1 style="width: 30vw;">
+              Our VISION To provide compelling value by delivering managed services and end-to-end hardware to software and to enhance operational efficiency and cost benefit
+            </h1>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="container bg-light d-flex flex-wrap justify-content-evenly" id="services" >
+      <div class="card p-2 text-center" style="width: 18rem; padding: 1%; margin: 3%;">
+        <img class="card-img-top mx-auto" src="https://cdn-icons-png.flaticon.com/512/1156/1156677.png" style="width: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">ISO COMPLIANT</h5>
+          <p class="card-text">We are ISO and OSAS certified since 2004 and has won numerous awards and accolades over the years</p>
+        </div>
+      </div>
+      <div class="card p-2 text-center" style="width: 18rem; padding: 1%; margin: 3%;">
+        <img class="card-img-top mx-auto" src="https://cdn-icons.flaticon.com/png/512/1582/premium/1582439.png?token=exp=1657181327~hmac=599ad7a76ee788d1ccceafa8903e7b38" style="width: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">DEDICATED & PROFESSIONAL SALES</h5>
+          <p class="card-text">Our team delivers for every sectors from government to corporate and retail. Our professional and dedicated sales people will assist you in seamless integration and after sales</p>
+        </div>
+      </div>
+      <div class="card p-2 text-center" style="width: 18rem; padding: 1%; margin: 3%;">
+        <img class="card-img-top mx-auto" src="https://cdn-icons-png.flaticon.com/512/2345/2345321.png" style="width: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">PHYSICAL STORAGE SOLUTION</h5>
+          <p class="card-text">For Enterprises seeking physical storage solution onsite within their office premises, we are the go-to experts. We help to consult on the most cost efficient solution, build, maintain and service your physical storage and server</p>
+        </div>
+      </div>
+      <div class="card p-2 text-center" style="width: 18rem; padding: 1%; margin: 3%;">
+        <img class="card-img-top mx-auto" src="https://cdn-icons-png.flaticon.com/512/2683/2683274.png" style="width: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">MANAGED IT SERVICES</h5>
+          <p class="card-text">Streamline your IT services to increase productivity and efficiency within the workplace with our specialized solutions catered to safe cost up to 60%</p>
+        </div>
+      </div>
+      <div class="card p-2 text-center" style="width: 18rem; padding: 1%; margin: 3%;">
+        <img class="card-img-top mx-auto" src="https://cdn-icons-png.flaticon.com/512/2103/2103658.png" style="width: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">NETWORK SOLUTIONS</h5>
+          <p class="card-text">We are the leading expert in any network solutionsincluding TCP/IP and star topology build up supported by the most advanced technology in cabling and fiber optic</p>
+        </div>
+      </div>
+      <div class="card p-2 text-center" style="width: 18rem; padding: 1%; margin: 3%;">
+        <img class="card-img-top mx-auto" src="https://cdn-icons-png.flaticon.com/512/7989/7989247.png" style="width: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">SUPPORT CONSULTING</h5>
+          <p class="card-text">We understand that not everyone is adept in IT. We are here for you to be consulted and provide solution from the simplest troubleshooting to the most complex configuration. Our trusted service centre had been appointed by international brands to be the authorized service point in Indonesia</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-muted" id="contact">
+      <div class="container">
+        <h6 class="text-uppercase text-center fw-bold mb-4">
+          Get In Touch
+        </h6>
+        <div class="row">
+          <i class="col bi bi-pin-angle text-end"></i>
+          <p class="col">
+            Jalan Alaydrus Nomor 35, Kel. Petojo Utara, Kec. Gambir, Kota Adm. Jakarta Pusat, Prop. DKI Jakarta
+          </p>
+        </div>
+        <div class="row">
+          <i class="col bi bi-envelope text-end"></i>
+          <p class="col">
+            hans@belipintar.co.id
+          </p>
+        </div>
+        <div class="row">
+          <i class="col bi bi-telephone text-end"></i>
+          <p class="col">
+            0216349318
+          </p>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright
+        <a class="text-reset fw-bold" href="https://belipintar.co.id/">PT BELPIN BLESSIN INDONESIA</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+<style>
+  .kuat {
+    font-weight: bolder;
+  }
+
+  .besar {
+    font-size: x-large;
+  }
+
+  .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .carousel-item h1 {
+    margin: 0;
+    color: white;
+  }
+</style>
+
+</html>
